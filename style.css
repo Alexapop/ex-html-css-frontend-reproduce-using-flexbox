@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: grey;
+    background-color: rgb(218, 211, 211);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,15 +12,20 @@ body {
 .container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 20px;
+    width: 100%;
     padding: 20px;
+
 }
 
-@media screen and (max-width: 600px) {
+@media (min-width: 768px) {
     .container {
         flex-direction: column;
         align-items: stretch;
+        gap: 25px;
     }
 }
 
@@ -40,14 +45,23 @@ body {
     align-items: center;
     border-radius: 5px;
     padding: 20px;
+    gap: 20px;
 
     }
 
     h2{font-family: 'Open Sans', sans-serif;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
     color: black;
-    font-weight:500px ;
-    gap: 10px ;
+    font-weight:normal ;
+    align-items: flex-start;
+    gap: 20px ;
+    
+    }
+
+    .card-logo{
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
     }
