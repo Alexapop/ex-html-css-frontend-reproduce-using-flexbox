@@ -16,7 +16,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    width: 100%;
     padding: 20px;
 
 }
@@ -60,8 +59,9 @@ body {
 
     .card-logo{
         background-color: white;
-        width: 120px;
         flex-wrap: wrap;
+         display: flex;
+         gap: 20px;
         }
 
     p{
