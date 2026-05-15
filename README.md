@@ -55,4 +55,4 @@ Utiliza como texto un **lorem ipsum**.
 
 ## Deliverables
 [Link to GitHub repository](https://github.com/Alexapop/ex-html-css-frontend-reproduce-using-flexbox)
-[Link to GitHub Pages]
+[Link to GitHub Pages](https://alexapop.github.io/ex-html-css-frontend-reproduce-using-flexbox/)

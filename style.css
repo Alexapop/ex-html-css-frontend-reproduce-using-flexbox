@@ -7,37 +7,25 @@ body {
     padding: 20px;
 }
 
-/*Layout container*/
-.container{
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  
-
-}
-
-/*Desktop layout*/
-@media (min-width: 768px) {
-    .card{
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 20x;
-    }
-}
-
 /*Main page header*/
-    .main-header{
-        text-align: center;
-        margin: 25px 0;
-        color: black;
-        font-weight: 700;
+.main-header {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin: 25px 15px;
+    color: black;
 
-    }
+}
 
-    /*Card component*/
-    .card{ 
+/*Layout container*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+/*Card component*/
+.card {
     font-family: 'Open Sans', sans-serif;
     background-color: white;
     display: flex;
@@ -46,40 +34,74 @@ body {
     border-radius: 5px;
     padding: 20px;
     gap: 20px;
-    }
+    flex: 1 1 300px;
+}
 
- /*Card header*/
-   .card-header{   
+/*Card header*/
+.card-header {
     font-family: 'Open Sans', sans-serif;
     color: black;
     display: flex;
-    font-weight:normal ;
+    font-weight: normal;
     align-items: center;
-    gap: 20px ;
-    margin:0;
+    gap: 20px;
+
+}
+
+
+/*Card logo*/
+.card-logo {
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    background-color: white;
+    flex-shrink: 0;
+    max-width: 40%;
+}
+
+/*Card description*/
+.card-text {
+    font-family: 'Open Sans', sans-serif;
+    font-style: oblique;
+    ;
+    background-color: white;
+    color: rgb(52, 50, 50);
+    margin-top: 25px;
+    display: flex;
+    line-height: 1.5;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+/*Card link*/
+.card-link {
+    background-color: white;
+    color: blue;
+}
+
+
+img {
+    width: 120%;
+    height: auto;
+    display: block;
+    flex-shrink: 0;
+}
+
+/*Desktop layout*/
+@media (min-width: 768px) {
+    .card {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .card img {
+        width: 60%;
 
     }
-  
-    /*Card logo*/
-    .card-logo{
-        display: flex;
-        justify-content: left;
-         align-items: flex-end;
-        background-color: white;
-        flex-shrink: 0;
-        }
 
-      /*Card description*/
-     .card-text{
-        font-family: 'Open Sans', sans-serif;
-        background-color: white;
-         color: rgb(52, 50, 50);
-        gap: 15px;
-        line-height: 1.5;
-     }
-       
-     /*Card link*/
-     .card-link{
-       background-color: white;
-     color: blue;
+    .container {
+        flex-direction: column;
+        justify-content: center;
     }
+}
